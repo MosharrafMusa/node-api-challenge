@@ -40,13 +40,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
-- [ ] Describe Middleware?
+      Ans: Express is light-weight. This means the framework isn't bloated in terms of file size and doesn't contain excess stuff that can slow down your app.
 
-- [ ] Describe a Resource?
+      Express is also unopinionated. This means that there's a lot of freedom on how to use express for your application (no one way to do things) thus making express very flexible in usage.
 
-- [ ] What can the API return to help clients know if a request was successful?
+* [ ] Describe Middleware?
+
+      Ans: Middleware is a function that can intercept requests and responses before it gets to the router. It has the possiblity to make changes to the request, and is useful for authenticating and doing any necessary modificiations before the server gets the request.
+
+* [ ] Describe a Resource?
+
+      Ans: Resources is data in the backend that can be managed by the front-end's intereactions with the end-points of a back-end API.
+
+* [ ] What can the API return to help clients know if a request was successful?
+
+  Ans: Statuses. Different statuses means different things. 200 generally means it's good, 404 means it's not found, 500 means internal error etc. 200 would be the answer to let the user know the request was successful (201 as well if there were changes to DBS).
 
 - [ ] How can we partition our application into sub-applications?
+
+  Ans: We can modularize our application by creating folders based on the what category the data is. For example, we would make seperate routers for comments and for users as they can be their own objects in the database. We can then pass the routers in as if they were middleware in the server file.
 
 ## Minimum Viable Product
 
